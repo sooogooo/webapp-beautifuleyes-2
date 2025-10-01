@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>明眸善睐 智能眼部评估</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "three": "https://esm.sh/three@0.160.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.12",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.96.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "react-markdown": "https://esm.sh/react-markdown@9.0.1",
+    "uuid": "https://esm.sh/uuid@9.0.1"
+  }
+}
+</script>
+<style>
+  :root {
+    --primary: #f43f5e;
+    --primary-rgb: 244, 63, 94;
+    --primary-hover: #e11d48;
+    --primary-light: #fda4af;
+    --text-on-primary: #ffffff;
+  }
+  [data-theme="sakura"] {
+    --primary: #FFB7C5;
+    --primary-rgb: 255, 183, 197;
+    --primary-hover: #E6A8B4;
+    --primary-light: #FFD9E1;
+    --text-on-primary: #5d4247;
+  }
+  [data-theme="lavender"] {
+    --primary: #C8A2C8;
+    --primary-rgb: 200, 162, 200;
+    --primary-hover: #B491B4;
+    --primary-light: #E0CEE0;
+    --text-on-primary: #ffffff;
+  }
+  [data-theme="mint"] {
+    --primary: #98FF98;
+    --primary-rgb: 152, 255, 152;
+    --primary-hover: #87E587;
+    --primary-light: #D4FFD4;
+    --text-on-primary: #2e5d2e;
+  }
+
+  @keyframes pulse-glow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(var(--primary-rgb), 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2.5s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+</style>
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

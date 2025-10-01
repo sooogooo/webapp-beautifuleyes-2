@@ -1,0 +1,7 @@
+{
+  "name": "BeautifulEyes - 明眸善睐",
+  "description": "一个用于全面眼部美学评估、个性化治疗建议和AI效果模拟的web app，为医疗美容从业者和求美者提供科学、客观的决策支持。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
